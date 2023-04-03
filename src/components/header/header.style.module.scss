@@ -1,0 +1,38 @@
+.header {
+  background-color: rgb(33, 37, 41, 95%);
+  height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+
+  .headerLogo {
+    grid-column: 1/3;
+
+    a {
+      cursor: inherit;
+    }
+
+    .headerLogoImg {
+      height: 15vh;
+      cursor: pointer;
+    }
+  }
+
+  .headerNavMenu {
+    grid-column: 3/7;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .header {
+    grid-template-columns: repeat(6, 1fr);
+
+    .headerLogo {
+      grid-column: 1/2;
+    }
+
+    .headerNavMenu {
+      grid-column: 2/7;
+    }
+  }
+}

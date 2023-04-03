@@ -1,0 +1,119 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  min-height: 75vh;
+
+  .registerHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .registerBody {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin: 0rem 0rem 0.8rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      ::placeholder {
+        color: rgb(33, 37, 41, 70%);
+        font-size: 1.1rem;
+        font-family: 'Lato', sans-serif;
+      }
+
+      input {
+        background-color: white;
+        border: 2px solid rgb(33, 37, 41, 95%);
+        border-radius: 0.7rem;
+        padding: 0.5rem;
+        width: 250px;
+        color: rgb(33, 37, 41, 95%);
+      }
+
+      button {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        background-color: rgb(33, 37, 41, 95%);
+        border-radius: 1.2rem;
+        font-size: 1.4rem;
+        width: 150px;
+        padding: 0.2rem;
+        cursor: pointer;
+      }
+      button:active {
+        background-color: rgb(116, 116, 116, 85%);
+      }
+
+      .registerBodyFormLoginMessage {
+        display: inline-block;
+        font-family: 'Raleway', sans-serif;
+        color: rgb(33, 37, 41, 95%);
+        font-size: 0.9rem;
+
+        .registerBodyFormLoginMessageLink {
+          color: rgb(0, 0, 238, 90%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .registerRegisterMessageHidden {
+    display: none;
+  }
+
+  .registerRegisterMessage {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 86, 42, 0.95);
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .register {
+    align-items: center;
+    font-size: 1.1rem;
+
+    .registerHeader {
+      align-items: center;
+    }
+
+    .registerBody {
+      align-items: center;
+
+      h3 {
+        font-size: 1.6rem;
+      }
+
+      form {
+        ::placeholder {
+          font-size: 1.3rem;
+        }
+
+        input {
+          width: 300px;
+        }
+
+        button {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

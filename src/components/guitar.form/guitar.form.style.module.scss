@@ -1,0 +1,232 @@
+.guitarForm {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem 1rem 4rem;
+
+  .guitarFormHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .guitarFormHeaderBackButton {
+      background-color: rgb(33, 37, 41, 95%);
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      padding: 0.4rem 0.8rem;
+    }
+
+    .guitarFormHeaderBackButton:hover {
+      background-color: rgb(33, 37, 41, 75%);
+    }
+
+    .guitarFormHeaderBackButton:active {
+      transform: scale(1.1);
+    }
+  }
+
+  .guitarFormBody {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      ::placeholder {
+        color: rgb(33, 37, 41, 60%);
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+      }
+
+      label {
+        font-family: 'Lato', sans-serif;
+        color: rgb(33, 37, 41, 95%);
+        font-size: 1rem;
+      }
+
+      input {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 0.7rem;
+        padding: 0.3rem 0.5rem;
+        width: 120px;
+        color: rgb(33, 37, 41, 95%);
+        margin: 0rem 0.5rem;
+        text-align: center;
+      }
+
+      .guitarFormBodyPictureLabel {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 0.7rem;
+        padding: 0.5rem;
+        width: 150px;
+        color: rgb(33, 37, 41, 95%);
+        margin: 0rem 0.5rem;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .guitarFormBodyPicture {
+        display: none;
+      }
+
+      .guitarFormBodyStyle {
+        display: flex;
+        flex-direction: row;
+        gap: 0rem;
+        padding: 0rem;
+        align-items: center;
+
+        .guitarFormBodyStyleOptions {
+          display: flex;
+          flex-direction: row;
+          background-color: white;
+          border: 2px solid black;
+          border-radius: 0.7rem;
+          padding: 0.3rem 0.5rem;
+          width: 100px;
+          color: rgb(33, 37, 41, 95%);
+          margin: 0rem 0.5rem;
+          text-align: center;
+        }
+      }
+
+      .guitarFormBodyDescription {
+        display: flex;
+        textarea {
+          min-height: 150px;
+          width: 180px;
+          font-size: 0.9rem;
+          resize: none;
+          border: 2px solid black;
+          border-radius: 0.7rem;
+          margin: 0rem 0.5rem;
+          padding: 0.4rem 0.6rem;
+        }
+      }
+
+      button {
+        background-color: rgb(33, 37, 41, 95%);
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 0.7rem;
+        padding: 0.5rem 1.5rem;
+      }
+
+      button:hover {
+        background-color: rgb(33, 37, 41, 75%);
+      }
+
+      button:active {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .guitarFormMessageHidden {
+    display: none;
+  }
+
+  .guitarFormMessage {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 86, 42, 0.95);
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .guitarForm {
+    .guitarFormBody {
+      form {
+        label {
+          font-size: 1.1rem;
+        }
+
+        input {
+          width: 170px;
+        }
+
+        .guitarFormBodyPictureLabel {
+          width: 150px;
+        }
+
+        .guitarFormBodyStyle {
+          .guitarFormBodyStyleOptions {
+            width: 110px;
+          }
+        }
+
+        .guitarFormBodyDescription {
+          input {
+            width: 300px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .guitarForm {
+    font-size: 1.2rem;
+    padding: 4rem 2rem 5rem;
+
+    .guitarFormHeader {
+      font-size: 1.3rem;
+
+      .guitarFormHeaderBackButton {
+        font-size: 1.2rem;
+      }
+    }
+
+    .guitarFormBody {
+      form {
+        label {
+          font-size: 1.2rem;
+        }
+
+        input {
+          padding: 0.5rem 1rem;
+          margin: 0rem 1rem;
+          width: 200px;
+        }
+
+        .guitarFormBodyPictureLabel {
+          padding: 0.5rem 0.8rem;
+          width: 200px;
+        }
+
+        .guitarFormBodyStyle {
+          padding: 0rem 1rem;
+
+          .guitarFormBodyStyleOptions {
+            padding: 0.5rem 1rem;
+            margin: 0rem 1rem;
+            width: 130px;
+          }
+        }
+
+        .guitarFormBodyDescription {
+          input {
+            width: 400px;
+            font-size: 1rem;
+          }
+        }
+
+        button {
+          font-size: 1.3rem;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

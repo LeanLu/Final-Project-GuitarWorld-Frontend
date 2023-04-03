@@ -1,0 +1,119 @@
+.guitarCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .guitarCardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(33, 37, 41, 95%);
+    border: 2px solid rgb(33, 37, 41, 40%);
+    border-radius: 1rem;
+    width: 100%;
+
+    .guitarCardInfoBrand {
+      font-size: 1.2rem;
+    }
+
+    .guitarCardInfoModel {
+      font-size: 1rem;
+    }
+
+    img {
+      height: 320px;
+      padding: 0.5rem 0rem;
+    }
+
+    .guitarCardInfoStyle {
+      font-size: 1rem;
+    }
+
+    .guitarCardInfoPrice {
+      font-size: 1.3rem;
+      font-family: 'Lato', sans-serif;
+      color: rgb(200, 0, 0);
+    }
+  }
+
+  .guitarCardMoreDetails {
+    background-color: rgb(33, 37, 41, 95%);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .guitarCardMoreDetails:hover {
+    background-color: rgb(33, 37, 41, 75%);
+  }
+
+  .guitarCardMoreDetails:active {
+    transform: scale(1.1);
+  }
+
+  .guitarCardButtonsAdd {
+    img {
+      width: 40px;
+      cursor: pointer;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    img:active {
+      transform: scale(1.2);
+    }
+  }
+
+  .guitarCardButtonsRemove {
+    img {
+      width: 30px;
+      cursor: pointer;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    img:active {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .guitarCard {
+    font-size: 1.2rem;
+
+    .guitarCardInfo {
+      img {
+        height: 360px;
+      }
+    }
+
+    .guitarCardMoreDetails {
+      border-radius: 0.8rem;
+      padding: 0.3rem 0.8rem;
+    }
+
+    .guitarCardButtonsAdd {
+      img {
+        width: 50px;
+      }
+    }
+
+    .guitarCardButtonsRemove {
+      img {
+        width: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.deleteGuitar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  min-height: 75vh;
+  width: 100%;
+
+  .deleteGuitarTitle {
+    font-size: 1.5rem;
+  }
+
+  .deleteGuitarBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      width: 150px;
+    }
+
+    p {
+      font-family: 'Raleway', sans-serif;
+      color: rgb(33, 37, 41, 95%);
+      font-size: 1.2rem;
+    }
+
+    .deleteGuitarBodyButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .deleteGuitarBodyButtonsYes {
+        background-color: rgb(33, 37, 41, 95%);
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.8rem;
+        width: 100px;
+      }
+
+      .deleteGuitarBodyButtonsYes:hover {
+        background-color: rgb(33, 37, 41, 75%);
+      }
+
+      .deleteGuitarBodyButtonsYes:active {
+        transform: scale(1.1);
+      }
+
+      .deleteGuitarBodyButtonsCancel {
+        background-color: rgb(191, 61, 61, 95%);
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.8rem;
+        width: 100px;
+      }
+
+      .deleteGuitarBodyButtonsCancel:hover {
+        background-color: rgb(191, 61, 61, 75%);
+      }
+
+      .deleteGuitarBodyButtonsCancel:active {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .deleteGuitar {
+    .deleteGuitarTitle {
+      font-size: 1.8rem;
+    }
+
+    .deleteGuitarBody {
+      img {
+        width: 160px;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      .deleteGuitarBodyButtons {
+        gap: 3rem;
+
+        .deleteGuitarBodyButtonsYes {
+          font-size: 1.2rem;
+          padding: 0.5rem 0.8rem;
+          width: 120px;
+        }
+
+        .deleteGuitarBodyButtonsCancel {
+          font-size: 1.2rem;
+          padding: 0.5rem 0.8rem;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
