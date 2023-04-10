@@ -4,12 +4,24 @@
 
 ### **Description:**
 
-Frontend of a guitar's e-commerce project developed in [React Redux](https://react-redux.js.org/).
+Frontend of a guitars e-commerce project.
+Users are required to register and log in to use the application.
+Once logged in, they can view all the guitars, filter them by categories, add or remove them from their shopping cart and view the guitar details on a specific page.
+There is an Admin role which can create, edit and delete the guitars.
 
-<div>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" title="React" alt="React" width="50" height="40"/>&nbsp;
-  <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" title="Redux" alt="Redux" width="50" height="40"/>&nbsp;
-</div>
+The project was developed using [React Redux](https://react-redux.js.org/) with [Typescript](https://www.typescriptlang.org/).
+Component testing was performed with [Jest](https://jestjs.io/).
+First of all, the project design was created using [Figma](https://www.figma.com/) and then [Sass](https://sass-lang.com/) was used for the web style with CSS module methodology.
+The media were stored in [Firebase](https://firebase.google.com/?hl=es) and finally, the app was deployed with [Netlify](https://www.netlify.com/).
+<br>
+<br>
+
+<p align="left">
+  <a href="https://developer.mozilla.org/en-US/">
+    <img src="https://skillicons.dev/icons?i=ts,react,redux,figma,html,css,sass,jest,firebase,netlify"/>
+  </a>
+</p>
+
 <br>
 <br>
 
@@ -41,6 +53,7 @@ Frontend of a guitar's e-commerce project developed in [React Redux](https://rea
 ### **How to use it:**
 
 - Fork the project.
+- Clone it to work in local.
 - Install dependencies: `npm i`.
 - Be sure the compilation is ok: `npm run build`.
 - Start the project: `npm run start`.
